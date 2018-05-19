@@ -1,0 +1,29 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("./../NYTimes-Page1-11-11-1918.jpg")
+}
+.jumbotron {
+    background-color: #002a63;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25pt;
+    font-family: 'Homemade Apple', cursive;
+    
+}
+
+.card{
+    margin-bottom: 5%;
+}
+
+.card-header{
+    background-color: #002a63;
+    color: rgb(255, 255, 255);
+
+}
+
+.button{
+    background-color: #002a63;
+    color: white;
+    padding: 5px;
+}
