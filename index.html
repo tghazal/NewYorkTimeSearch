@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-  <script src="./assets/javascript/axios.js"></script>
+    <script src="./assets/javascript/axios.js"></script>
 </head>
 
 <body>
@@ -39,13 +39,13 @@
                         <h5 class="card-title"></h5>
                         <p class="card-text">
                             Search Term:
-                            <input class="form-control" type="text" placeholder="Default input"> Number of Records to Achieve:
-                            <input class="form-control" type="text" placeholder="Default input"> Start Year(Optional):
-                            <input class="form-control" type="text" placeholder="Default input"> End year(Optional)
-                            <input class="form-control" type="text" placeholder="Default input">
+                            <input id="search-term" class="form-control" type="text" placeholder=""> Number of Records to Achieve:
+                            <input id="num-records" class="form-control" type="text" placeholder=""> Start Year(Optional):
+                            <input id="start-year" class="form-control" type="text" placeholder=""> End year(Optional)
+                            <input id="end-year" class="form-control" type="text" placeholder="">
                         </p>
-                        <a href="#" class="button">Search</a>
-                        <a href="#" class="button">Clear Results</a>
+                        <a href="#" id="search-button" class="button">Search</a>
+                        <a href="#" id="clear-button" class="button">Clear Results</a>
                     </div>
                 </div>
             </div>
