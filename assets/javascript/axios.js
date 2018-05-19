@@ -1,7 +1,12 @@
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-        url += '?' + $.param({
-            'api-key': "71c307126f2b400d96f75a360e924d72"
-        });
+url += '?' + $.param({
+ 'api-key': "4ce897641c3446babede737c831ec9ad",
+ 'q': "roosevelt",
+ 'begin_date': "20080721",
+ 'end_date': "20180820"
+});
+
+
 
         $.ajax({
             url: url,
@@ -9,7 +14,7 @@ var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
         })
             .then(function (response) {
                 console.log(response);
-                console.log(response.docs);
+                console.log(JSON.stringify(response.response.docs));
             })
             .catch(function (error) {
                 console.error(error);
