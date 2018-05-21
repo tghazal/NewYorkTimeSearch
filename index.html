@@ -13,9 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="./assets/javascript/axios.js"></script>
+   
 </head>
 
 <body>
@@ -39,9 +37,12 @@
                         <h5 class="card-title"></h5>
                         <p class="card-text">
                             Search Term:
-                            <input id="search-term" class="form-control" type="text" placeholder=""> Number of Records to Achieve:
-                            <input id="num-records" class="form-control" type="text" placeholder=""> Start Year(Optional):
-                            <input id="start-year" class="form-control" type="text" placeholder=""> End year(Optional)
+                            <input id="search-term" class="form-control" type="text" placeholder="">
+                             Number of Records to Achieve:
+                            <input id="num-records" class="form-control" type="text" placeholder=""> 
+                            Start Year (Format(YYYYMMDD)):
+                            <input id="start-year" class="form-control" type="text" placeholder="">
+                             End year  (Format(YYYYMMDD))
                             <input id="end-year" class="form-control" type="text" placeholder="">
                         </p>
                         <a href="#" id="search-button" class="button">Search</a>
@@ -66,7 +67,7 @@
                         </div>
                         <div class="row">
                             <div class="card-body">
-
+                          <p id="data"></p>
                             </div>
                         </div>
 
@@ -75,7 +76,9 @@
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="./assets/javascript/axios.js"></script>
 </body>
 
 </html>
